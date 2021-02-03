@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Hind+Siliguri:300,600|Martel:400,900);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -271,7 +273,7 @@ html {
 }
 
 body {
-    font-family: Hind Siliguri, Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;;
     font-size: 18px;
     line-height: 1.42857;
     color: #838383;
@@ -367,7 +369,7 @@ hr {
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-family: Martel, Times New Roman, Times, serif;
+    font-family:'Montserrat', sans-serif;;
     font-weight: 900;
     line-height: 1.1;
     color: #1763e9
