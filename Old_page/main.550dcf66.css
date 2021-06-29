@@ -2332,7 +2332,7 @@ input[type=search] {
     background-image: none;
     border: 1px solid transparent;
     white-space: nowrap;
-    padding: 12px 18px;
+    padding: 10px 18px;
     font-size: 18px;
     line-height: 1.42857;
     border-radius: 2px;
@@ -2626,10 +2626,10 @@ a.btn.disabled, fieldset[disabled] a.btn {
     color: #777;
     text-decoration: none
 }
-
+/*This is the botton to see my projects*/
 .btn-group-lg > .btn, .btn-lg {
-    padding: 14px 22px;
-    font-size: 23px;
+    padding: 10px 22px;
+    font-size: 20px;
     line-height: 1.33333;
     border-radius: 4px
 }
@@ -4735,7 +4735,7 @@ button.close {
 }
 
 .hero-full-container {
-    padding: 20% 0
+    padding: 6% 0
 }
 
 @media (min-width: 992px) {
