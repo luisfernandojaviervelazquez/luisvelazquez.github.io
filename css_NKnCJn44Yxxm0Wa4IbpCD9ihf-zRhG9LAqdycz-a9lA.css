@@ -1150,8 +1150,8 @@ ul.links li {
 .social-link {
   padding: 0.25em;
   background-color: #fff;
-  border-radius: 3px;
-  margin: 2px;
+  border-radius: 6px;
+  margin: 6px;
 }
 .youtube {
   background-color: rgba(255, 0, 0, 0.8);
@@ -1160,10 +1160,10 @@ ul.links li {
   background-color: rgba(255, 0, 0, 1);
 }
 .github {
-  background-color: rgba(24, 23, 23, 0.8);
+  background-color: rgba(41, 41, 41, 0.8);
 }
 .github:hover {
-  background-color: rgba(24, 23, 23, 1);
+  background-color: rgb(61, 61, 61);
 }
 .patreon {
   background-color: rgba(249, 104, 84, 0.8);
@@ -1175,7 +1175,7 @@ ul.links li {
   background-color: rgba(26, 103, 219, 0.8);
 }
 .twitter:hover {
-  background-color: #1d8bf2;
+  background-color: #1f6fb9;
 }
 .instagram {
   background-color: rgba(228, 64, 95, 0.8);
@@ -1242,13 +1242,13 @@ ul.links li {
 @media (prefers-color-scheme: dark) {
   body {
     color: #eee;
-    background-color: #000;
+    background-color: rgb(24, 25, 26);
   }
   h2 {
     color: #fff;
   }
   a {
-    color: #b3bcdd;
+    color: #9eb2fb;
   }
   a:hover {
     color: #c6d0f4;
