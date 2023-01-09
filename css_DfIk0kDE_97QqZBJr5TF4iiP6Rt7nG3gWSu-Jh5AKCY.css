@@ -157,7 +157,7 @@ tr .ajax-progress-throbber .throbber {
   height: 16px;
   margin-top: 5px;
   border: 1px solid;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
 }
 .progress__bar {
   width: 3%;
