@@ -57,7 +57,7 @@ body {
     color: #fff;
 }
 
-.about-link {
+.resume-link {
     font-size: 1.5rem;
     text-decoration: none;
     color: #333;
@@ -67,7 +67,7 @@ body {
     transition: background-color 0.5s, color 0.3s;
 }
 
-.about-link:hover {
+.resume-link:hover {
     background-color: #333;
     color: #fff;
 }
