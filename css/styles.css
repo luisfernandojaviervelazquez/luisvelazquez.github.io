@@ -29,38 +29,39 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-bottom: 60px; /* Add space above the Projects button */
+    margin-bottom: 35px; /* Add space above the Projects button */
 }
 
 /* Icons */
 .icon img {
     width: 40px;
     height: 40px;
-    transition: transform 0.2s;
+    transition: transform 0.15s;
     filter: brightness(0) invert(1); /* Invert colors for dark mode */
 }
 
 .icon img:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
-/* Projects Button */
-.projects-link {
+/* Button Styling */
+.button {
     display: inline-block;
-    font-size: 1.0rem;
+    font-size: 1.1rem;
     text-decoration: none;
-    color: #133985;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #ffffff00;
     padding: 10px 30px;
-    border-radius: 10px;
-    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 7px;
+    transition: background-color 0.2s, transform 0.2s;
     bottom: 10px;
     position: relative;
     margin-top: 20px;
+
 }
 
-.projects-link:hover {
+.button:hover {
     background-color: #13598e;
     color: #fff;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
