@@ -3,12 +3,12 @@ body {
     margin: 0;
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background: linear-gradient(135deg, #286a86, #0c2d67, #091939); /* Dark blue gradient */
-    color: #fff; /* Light text for dark mode */
+    color: #ffffff; /* Light text for dark mode */
     display: flex;
     flex-direction: column; /* Arrange content vertically */
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100dvb;
 }
 
 /* Main Container */
