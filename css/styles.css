@@ -14,8 +14,6 @@ body {
 /* Main Container */
 .container {
     text-align: center;
-    
-
 }
 
 /* Name Styling */
@@ -65,29 +63,4 @@ body {
     background-color: #13598e;
     color: #fff;
     transform: scale(1.05);
-}
-
-/* Attribution Styling */
-.attribution {
-    font-size: 0.8rem;
-    color: #aaa;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.attribution a {
-    text-decoration: none;
-    color: #007bff;
-}
-
-.attribution a:hover {
-    text-decoration: underline;
-}
-/* Projects Container */
-.projects {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    
 }
