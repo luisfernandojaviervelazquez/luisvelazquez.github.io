@@ -2,8 +2,10 @@
 body {
     margin: 0;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f7f7f7;
+    background: linear-gradient(135deg, #286a86, #0c2d67, #091939); /* Dark blue gradient */
+    color: #fff; /* Light text for dark mode */
     display: flex;
+    flex-direction: column; /* Arrange content vertically */
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -12,22 +14,24 @@ body {
 /* Main Container */
 .container {
     text-align: center;
+    flex: 1; /* Push the footer down */
+
 }
 
 /* Name Styling */
 .name {
     font-size: 2.5rem;
-    
-    color: #333;
-    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 40px;
 }
 
-/* Links Container */
+/* Links Styling */
 .links {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 10px;
+    margin-bottom: 40px; /* Add space above the Projects button */
 }
 
 /* Icons */
@@ -35,41 +39,66 @@ body {
     width: 40px;
     height: 40px;
     transition: transform 0.2s;
+    filter: brightness(0) invert(1); /* Invert colors for dark mode */
 }
 
 .icon img:hover {
     transform: scale(1.1);
 }
 
-/* Projects Link */
+/* Projects Button */
 .projects-link {
-    font-size: 1.5rem;
+    display: inline-block;
+    font-size: 1.2rem;
     text-decoration: none;
-    color: #007bff;
-    border: 2px solid #007bff;
+    color: #133985;
+    background-color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
-    transition: background-color 0.5s, color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .projects-link:hover {
-    background-color: #007bff;
+    background-color: #13598e;
     color: #fff;
+    transform: scale(1.02);
+}
+
+/* Attribution Styling */
+.attribution {
+    font-size: 0.8rem;
+    color: #aaa;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
 }
 
 .resume-link {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-decoration: none;
-    color: #333;
-    border: 2px solid #333;
+    color: #fff;
+    background-color: #007bff;
     padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.5s, color 0.3s;
+    bottom: 20px;
+    position: absolute;
+    
+    transform: translateX(-50%);
+
 }
 
 .resume-link:hover {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
 }
 
 /* Projects Container */
@@ -78,4 +107,5 @@ body {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+    
 }
