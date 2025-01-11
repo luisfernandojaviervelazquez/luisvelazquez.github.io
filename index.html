@@ -43,11 +43,25 @@
         </div>
         <script>
             document.querySelectorAll(".button").forEach((button) => {
+                let preloaded = false; // Keep track of whether the page has been preloaded
+
                 button.addEventListener("mouseenter", () => {
-                    const preloadLink = document.createElement("link");
-                    preloadLink.rel = "prefetch";
-                    preloadLink.href = button.getAttribute("data-preload");
-                    document.head.appendChild(preloadLink);
+                    if (!preloaded) {
+                        // Only preload if not already done
+                        const preloadUrl = button.getAttribute("data-preload");
+                        if (preloadUrl) {
+                            const preloadLink = document.createElement("link");
+                            preloadLink.rel = "prefetch";
+                            preloadLink.href = preloadUrl;
+                            document.head.appendChild(preloadLink);
+                            preloaded = true; // Mark as preloaded
+                        } else {
+                            console.warn(
+                                "No data-preload attribute set for",
+                                button,
+                            );
+                        }
+                    }
                 });
             });
         </script>
